@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Sogyo Adventure</title>
+        <meta name="description" content="The ticket shop for Sogyo employees">
+
+        <link rel="stylesheet" href="style/main.css">
+    </head>
+
+    <body>
+        <header id="logo-header">
+            <img src="img/logo_sogyo_rgb_199x200-1.jpg">
+        </header>
+        <header id="mainheader">
+            Sogyo Adventure
+        </header>
+        <nav>
+            <a id="home" href="index.html">
+                Home
+            </a>
+            |
+            <a id="map" href="map.html">
+                Discover
+            </a>
+            |
+            <a id="shoppingbasket" href="shoppingbasket.html">
+                Shopping basket <div class="badge">0</div>
+            </a>
+            |
+            <a id="myorders" href="orders.html">
+                My orders
+            </a>
+            |
+            <a id="admin" href="admin.html">
+                Admin
+            </a>
+        </nav>
+
+        <main>
+            <article>
+                <div class="parkname"> nice</div>
+                <div class="parkdescription"></div>                    
+                <div class="order">
+                    <div class="prices">
+                        <label>Adult Price: </label><input placeholder="Adults Price" type="number" class="adultprice" />
+                        <label>Kids Price: </label><input placeholder="Kids Price" type="number" class="kidprice" /> <br>
+                        <label>Adults required for discount: </label><input placeholder="Number Of Adults" type="number" class="requiredadultdiscount" />
+                        <label>Kids required for discount: </label><input placeholder="Number Of Kids" type="number" class="requiredkiddiscount" /> <br>
+                        <label>Discount: </label><input placeholder="Discount" type="number" class="discountedit" /> <br>
+                        <label>Available: </label><input placeholder="Available" type="number" class="available" /> <br>
+                    <button class="editbutton">Edit</button>
+                </div>
+            </article>
+
+            
+
+        </main>
+        <template id="editadmintemplate">
+            <article>
+                <div class="parkname"> nice</div>
+                <div class="parkdescription"></div>                    
+                <div class="order">
+                    <div class="prices">
+                        <label>Adult Price: </label><input placeholder="Adults Price" type="number" class="adultprice" />
+                        <label>Kids Price: </label><input placeholder="Kids Price" type="number" class="kidprice" /> <br>
+                        <label>Adults required for discount: </label><input placeholder="Number Of Adults" type="number" class="requiredadultdiscount" />
+                        <label>Kids required for discount: </label><input placeholder="Number Of Kids" type="number" class="requiredkiddiscount" /> <br>
+                        <label>Discount: </label><input placeholder="Discount" type="number" class="discountedit" /> <br>
+                        <label>Available: </label><input placeholder="Available" type="number" class="available" /> <br>
+                    <button class="editbutton">Edit</button>
+                </div>
+            </article> 
+        </template>
+
+
+        <script src="src/general.js"></script>
+        <script src="src/admin.js"></script>
+    </body>
+</html>

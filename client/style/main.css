@@ -1,0 +1,128 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    
+
+    --primary-color: #007936;
+    --accent-color: #eee;
+    --light-text-color: rgb(107, 107, 107);
+}
+
+/* Describes the styling of the one and only element with id="mainheader", note the # in front of mainheader */
+#mainheader {
+    background-color: var(--primary-color);
+    background: rgb(8,57,1);
+    background: linear-gradient(0deg, rgba(8,57,1,0.919502835313813) 0%, rgba(73,164,0,1) 45%);
+    font-size: 3rem;
+    color: white;
+}
+
+
+#logo-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+#logo-header img {
+    margin-left: 30px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+
+main {
+    padding: 25px;
+}
+
+nav
+{
+    height: 2rem;
+    line-height: 2rem;
+    background-color: var(--accent-color);
+    background: rgb(8,57,1);
+    background: linear-gradient(0deg, rgba(8,57,1,0.919502835313813) 0%, rgba(73,164,0,1) 45%);
+}
+
+#stickyheader {
+    
+}
+
+/* Describes the styling of all elements with class="parkname", note the . in front of parkname */
+.parkname {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Describes the styling of all <article> elements */
+article {
+    border: 1px solid var(--primary-color);
+    color: var(--light-text-color);
+    margin: 5px;
+    transition-delay: 1s;
+}
+
+.order {
+    padding-top: 25px;
+}
+
+.orderbutton {
+    color : white;
+    background: linear-gradient(#00FF00, #1B6C1B);
+    /*border : none;*/
+    text-align:  center;
+    border-radius: 5%;
+
+}
+
+.orderbutton:hover{
+    background: linear-gradient(red,black);
+}
+
+.editbutton {
+    color : white;
+    background: linear-gradient(red, black);
+    /*border : none;*/
+    text-align:  center;
+    border-radius: 5%;
+
+}
+
+.editbutton:hover{
+    background: linear-gradient(purple,black);
+}
+
+.orderbutton :disabled{
+    background: grey;
+}
+
+.orderbutton :disabled :hover{
+    background: grey;
+}
+
+.badge {
+    background-color: red;
+    display: none;
+    color: white;
+    font-weight: bold;
+    width: 25px;
+    border-radius: 25px;
+}
+
+a {
+    color : white;
+    text-align: center;
+}
+
+a:hover {
+    color: black;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Sogyo Adventure</title>
+        <meta name="description" content="The ticket shop for Sogyo employees">
+        <link rel="stylesheet" href="style/main.css">
+        <link rel="stylesheet" href="style/map.css">
+        <!-- leaflet css  -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+    <style>
+
+        #dmap {
+            height: 100px;
+            width: 100%;
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header id="logo-header">
+            <img src="img/logo_sogyo_rgb_199x200-1.jpg">
+        </header>
+        <header id="mainheader">
+            Sogyo Adventure
+        </header>
+        <nav>
+            <a id="home" href="index.html">
+                Home
+            </a>
+            |
+            <a id="map" href="map.html">
+                Discover
+            </a>
+            |
+            <a id="shoppingbasket" href="shoppingbasket.html">
+                Shopping basket <div class="badge">0</div>
+            </a>
+            |
+            <a id="myorders" href="orders.html">
+                My orders
+            </a>
+            |
+            <a id="admin" href="admin.html">
+                Admin
+            </a>
+        </nav>
+
+        <main>
+
+            <div id="discoverablemap">
+
+            </div>
+
+        </main>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="http://maps.stamen.com/js/tile.stamen.js"></script>
+        <script type="text/javascript" src="https://stamen-maps.a.ssl.fastly.net/js/tile.stamen.js?v1.3.0"></script>
+        <script src="src/general.js"></script>
+        <script src="src/map.js"></script>
+    </body>
+</html>
